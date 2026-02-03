@@ -1,5 +1,4 @@
 <?php
-// Misal kita mau buat tahun footer otomatis
 $year = date("Y");
 ?>
 <!DOCTYPE html>
@@ -80,14 +79,14 @@ $year = date("Y");
 
   <main>
     <div class="box">
-      <!-- LOADING -->
+      
       <div id="loading">
         <div class="spinner"></div>
         <p>Menghubungkan ke server...</p>
         <small>Mohon tunggu ya</small>
       </div>
 
-      <!-- ROAST -->
+      
       <div id="roast" class="hidden">
         <h1>🚫 403 Forbidden</h1>
         <p><strong>Server menolak permintaan kamu</strong></p>
@@ -97,13 +96,13 @@ $year = date("Y");
     </div>
   </main>
 
-  <!-- FOOTER -->
+  
   <footer>
     &copy; <?php echo $year; ?> kndchn
   </footer>
 
   <script>
-    // Loading → roast
+    
     setTimeout(() => {
       document.getElementById("loading").style.display = "none";
       document.getElementById("roast").classList.remove("hidden");
